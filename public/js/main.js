@@ -15,6 +15,24 @@ $("#bt-top-close").click(function(){
 });
 */
 // cookie로 제한시간을 10분 줄 때
+$(window).scroll(function(){
+	var sTop = $(this).scrollTop();
+	if(sTop > 60) {
+		$(".tip").addClass("d-none");
+		$(".top-navis").css("position","fixed");
+		$(".top-navis").stop().animate({"top":0}, 500);
+	}
+	if(sTop > 400) $(".bt-top").addClass("bt-top-show");
+	else {
+		$(".bt-top").removeClass("bt-top-show");
+		$(".tip").removeClass("d-none");
+		$(".top-navis").css("position","relative");
+		$(".top-navis").stop().animate({"top":0}, 500);
+	}
+});
+$(".bt-top").click(function(){
+	$("html, body").stop().animate({"scrollTop":0}, 500);
+  });
 $("#bt-top-close").click(function(){
 	$(".top-banner").stop().slideUp(300);
 	var d = new Date();

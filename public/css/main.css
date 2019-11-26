@@ -5,6 +5,11 @@
 /* font-family: 'Poppins', sans-serif; */
 html, body {font-family: 'Lato', sans-serif;}
 
+.bt-top {position: fixed; z-index: 99; bottom: -4.5rem; right: 2rem; z-index: 9999; opacity: 0.7; padding: 0.5rem 1rem 0.5rem 1rem;
+    color: #5B6E7A; border: 1px solid #5B6E7A; transition: all 0.5s; cursor: pointer;}
+.bt-top:hover {background-color: #5B6E7A; color:#fff; padding: 0.2rem 1rem 0.8rem 1rem;}
+.bt-top-show {transform: translateY(-7rem); z-index: 99;}
+
 .wrap {width: 100%; max-width: 1170px; margin: 0 auto;}
 .underbar {cursor: pointer;}
 .underbar:after {display: block; content: ""; border-bottom: 2px solid #222; width: 0; transition: all 0.5s; } 
@@ -74,7 +79,7 @@ html, body {font-family: 'Lato', sans-serif;}
 	.langs .fa-angle-down, .currency .fa-angle-down{color: #666;}
 	.langs *, .currency * {padding-right: 0.25rem;}
 	.langs img,.currency img {width: 18px;}
-	.langs > ul, .currency > ul {position: absolute; background-color: #fff; padding: 0.5rem; top: 18px; display: none; box-shadow: 0 3px 3px rgba(0,0,0,0.3); z-index: 99;}
+	.langs > ul, .currency > ul {position: absolute; background-color: #fff; padding: 0.5rem; top: 18px; display: none; box-shadow: 0 3px 3px rgba(0,0,0,0.3); z-index: 9999;}
 	.langs > ul > li, .currency > ul > li {display: flex; padding: 0.25rem; align-items: center;}
 	/* 상단 서치바와 서치레이어*/
 	.schs {position: relative; background-color: #fff; padding: 0.25rem; border-bottom: 1px solid #5B6E7A;}
@@ -99,7 +104,7 @@ html, body {font-family: 'Lato', sans-serif;}
 	.top-link > .bts > li {margin-left: 1rem; align-items: center; display: flex;}
 	.top-link .rnd-cnt {width: 20px; height: 20px; border-radius: 50%; background-color: #b5c5cf; text-align: center;}
 	.top-link .underbar {cursor: pointer;}
-.top-navis {background-color: transparent; margin-top: 0.75rem; font-size: 0.75rem; position: relative;}
+.top-navis {background-color: #fff; width: 100%; font-size: 0.75rem; position: relative; z-index: 9980;}
 	.top-navis > .top-navi {display: flex;}
 	.top-navis .underbar:after {border: 0.5px solid #697379;}
 	.top-navis .navi {padding: 0.75rem 0; margin-right: 2rem; color: #697379; font-weight: bold; letter-spacing: 1.5px;}
@@ -269,11 +274,11 @@ html, body {font-family: 'Lato', sans-serif;}
  .insta-wrap {position:relative;}
  .insta-wrap2 {overflow:hidden;}
  .insta-items {position:relative; display: flex; justify-content: space-between; align-items: flex-start;}
- .insta-item {flex: 15% 0 0; padding: 0 1%; cursor: pointer; transition: all 0.5s;}
+ .insta-item {flex: 14.5% 0 0; padding:0 1%; cursor: pointer; transition: all 0.5s;}
  .insta-item:hover {opacity: 0.3;}
  .insta-bts {margin-top: 2rem;}
- #insta-prev {left: 1%}
- #insta-next {right: -1%}
+ #insta-prev {left: -1%}
+ #insta-next {right: -2.5%}
 
 /* Footer */
  footer {background-color: #1f3441; color: #fff; padding: 2.5rem 0 10rem 0; font-size: 0.875rem;}
@@ -301,9 +306,9 @@ html, body {font-family: 'Lato', sans-serif;}
 	.sns-like > div:last-child {display: flex; justify-content: center; margin-top: 0.5rem;}
 	.sns-like > div:last-child > button {margin: 0 0.25rem ; background-color: #3b5998; border: none; padding: 2px 6px; font-size: 0.75em;}
 	.sns-like > div:last-child > button:hover {margin: 0 0.25rem ; background-color: #21345e;}
-	.footer-email {display: flex; justify-content: space-between; margin-top: 1.5rem;}
-	.footer-email > input {flex: 60% 1 0; background-color: transparent; border: 1px solid #444; padding: 0.5rem;}
-	.footer-email > button {flex: 20% 0 1; width: 20%; padding: 0.5rem 0; background-color: #444; margin-left: 1%;}
+	.footer-email {display: flex; justify-content: space-between; margin-top: 1.5rem; align-content: flex-start;}
+	.footer-email > input {flex: 40% 1 0; height: 3rem; background-color: transparent; border: 1px solid #fff; color: #fff; padding: 0.5rem;}
+	.footer-email > button {flex: 20% 0 1; width: 20%; background-color: transparent; padding: 0.5rem 0; color: #fff; border: 1px solid #fff; margin: 0;  margin-left: 1%;}
 
 	.footer-bots {color: #aaa; border-top: 1px solid #444; font-size: 0.875rem; line-height: 2rem;}
 	.footer-billing {display: flex; margin-top: 2rem;}

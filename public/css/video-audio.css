@@ -1,0 +1,5 @@
+html, body {width: 100%; height: 100%;}
+video {width: 100%; height: auto;}
+/* body {background: url(../img/slide-img/slideshow-3-compressor.jpg) no-repeat center center; background-size: cover;} */
+
+.videos{position: relative; width:100%; height: 100%;}

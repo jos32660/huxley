@@ -1,0 +1,9 @@
+{
+	"slides":[
+		{"src":"../img/p (1).png", "desc": "배너1"},
+		{"src":"../img/p (2).png", "desc": "배너2"},
+		{"src":"../img/p (3).png", "desc": "배너3"},
+		{"src":"../img/p (4).png", "desc": "배너4"},
+		{"src":"../img/p (5).png", "desc": "배너5"}
+	]
+}

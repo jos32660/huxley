@@ -1,0 +1,4 @@
+.player-wrap {margin: 1rem auto; width: 300px; border: 3px solid #ffe4ec; border-radius: 6px; padding: 0.5rem; background: linear-gradient(to bottom, #d1eaff, #c1b7f5, #c6e3fc);}
+.player-wrap i {color: #fdf4f4;}
+.snd-ctrls {display: flex; align-items: center; justify-content: space-evenly;}
+#volume {width: 100px;}

@@ -1,0 +1,10 @@
+html,body{height: 100%;}
+body {overflow: hidden;}
+.wrap {height: 100%;}
+.page {height: 100%; position: relative;}
+nav {z-index: 9999;}
+.page .page-tit {transform: translate(-50%, -50%); position: absolute; left:50%; top:50%; color: #fff; font-size: 3rem;}
+.page1 {background-color: #b7e0f0;}
+.page2 {background-color: #a9d6eb;}
+.page3 {background-color: #9fcae6;}
+.page4 {background-color: #92c5e7;}

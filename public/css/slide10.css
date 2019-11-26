@@ -1,0 +1,7 @@
+.banners-tit {width: 720px; margin: 0 auto;}
+.banners {width: 720px; height: 380px; margin: 0 auto; position: relative;} /* 화면 */
+.banner {width: 720px; position: absolute;} /* 움직일 배너*/
+.banner-cont{position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); font-size: 2.5rem; color: #222;}
+.pagers {position: absolute; width: 720px; display: flex; justify-content: center; bottom: 20px; z-index:999;}
+.pager {padding: 8px; cursor: pointer;}
+.pager.active {color: cornflowerblue;}

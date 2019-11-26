@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>REST-SQL 테스트</title>
+    <link rel="stylesheet" href="../css/fa.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+		<script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/imagesloaded.pkgd.min.js"></script>
+    <script src="../js/masonry.pkgd.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+  </head>
+  <body class="rest">
+    <div class="container">
+      <div class="jumbotron">
+        <h1>REST-SQL TEST</h1>
+      </div>
+      <div class="div create my-3 border-bottom pb-2">
+        <h3 class="mb-2 mt-3">- SAVE (Create)</h3>
+        <form name="saveForm" method="post" action="/rest-sql/sql" onsubmit="return saveFn(this);">
+          <ul class="d-flex">
+            <li class="mr-2">
+              <input class="form-control" name="username" id="username-wr">
+            </li>
+            <li>
+              <button class="btn btn-primary" id="bt-wr">SAVE</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="div update my-3 border-bottom pb-2">
+        <h3 class="mb-2 mt-3">- CHANGE (Update)</h3>
+          <ul class="d-flex">
+            <li class="mr-2">
+							<input type="hidden" name="id" id="id-up">
+              <input class="form-control" name="username" id="username-up" disabled>
+            </li>
+            <li>
+              <button class="btn btn-success" id="bt-up" disabled>CHG</button>
+            </li>
+          </ul>
+      </div>
+      <div class="div read my-3">
+        <h3 class="mb-2">- LIST(Read)</h3>
+        <ul class="d-flex flex-wrap lists">
+        </ul>
+      </div>
+    </div>
+    <script src="../js/util.js"></script>
+    <script src="/js/rest-ajax.js"></script>
+  </body>
+</html>
